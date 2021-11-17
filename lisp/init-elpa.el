@@ -151,6 +151,7 @@
     w3m
     workgroups2
     zoutline
+    go-mode
     company-c-headers
     company-statistics)
   "Packages to install from melpa-unstable.")
@@ -163,7 +164,7 @@
 (setq package-archives
       '(
         ;; uncomment below line if you need use GNU ELPA
-        ;; ("gnu" . "https://elpa.gnu.org/packages/")
+        ("gnu" . "https://elpa.gnu.org/packages/")
         ("melpa" . "https://melpa.org/packages/")
         ("melpa-stable" . "https://stable.melpa.org/packages/")
 
@@ -325,7 +326,7 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'company-native-complete)
 (require-package 'company-c-headers)
 (require-package 'company-statistics)
-(require-package 'lsp-mode)
+;;(require-package 'lsp-mode)
 (require-package 'elpy)
 (require-package 'legalese)
 (require-package 'simple-httpd)
@@ -511,6 +512,17 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 ;; {{ trivial packages which has extra dependency
 (require-package 'emms)
 ;; }}
+
+;; go-mode
+(require-package 'go-mode)
+(require-package 'eglot)
+(require-package 'go-dlv)
+(require-package 'go-fill-struct)
+(require-package 'go-impl)
+;; (require-package 'flycheck-golangci-lint)
+;;(require-package 'go-tag)
+;;(require-package 'go-gen-test)
+;;(require-package 'go-test)
 
 ;; kill buffer without my confirmation
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))
