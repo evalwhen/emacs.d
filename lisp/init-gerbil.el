@@ -7,4 +7,8 @@
 
 (visit-tags-table "/Users/melp/Downloads/gerbil-0.16/src/TAGS")
 
+;; (add-hook 'gerbil-mode-hook #'treadmill-gerbil-mode)
+
+
+
 (provide 'init-gerbil)

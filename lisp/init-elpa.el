@@ -532,6 +532,10 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'gerbil-mode)
 (require-package 'gambit)
 
+;;(require-package 'treadmill)
+;;(require-package 'treadmill-history)
+;;(require-package 'treadmill-complete)
+
 ;; kill buffer without my confirmation
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))
 
