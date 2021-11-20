@@ -13,6 +13,7 @@ If `my-company-select-by-number-p' is nil, this flag is ignored. ")
 
 (with-eval-after-load 'company
 
+ (push 'company-restclient company-backends)
   ;; company changed the default key bindings, un-comment below code to restore original key bindings
   ;; @see https://github.com/company-mode/company-mode/wiki/Tips-%26-tricks/_compare/5ea840d^...5ea840d
 
@@ -146,5 +147,7 @@ In that case, insert the number."
 ;; So we should NOT turn on company-ispell
 (add-hook 'org-mode-hook 'company-ispell-setup)
 ;; }}
+
+;; restclient
 
 (provide 'init-company)

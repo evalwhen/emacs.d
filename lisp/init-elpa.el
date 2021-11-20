@@ -53,6 +53,7 @@
 ;; if it's not visible after  `list-packages'.
 (defvar melpa-include-packages
   '(ace-window ; latest stable is released on year 2014
+    restclient
     ace-pinyin
     pos-tip
     web-mode
@@ -524,6 +525,8 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'go-tag)
 (require-package 'go-gen-test)
 (require-package 'gotest)
+(require-package 'restclient)
+(require-package 'company-restclient)
 
 ;; kill buffer without my confirmation
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))

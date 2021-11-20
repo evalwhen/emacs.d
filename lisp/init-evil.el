@@ -267,6 +267,13 @@ If the character before and after CH is space or tab, CH is NOT slash"
   "gr" 'xref-find-references
   )
 
+(evil-declare-key 'normal restclient-mode-map
+  "rs" 'restclient-http-send-current
+  "rn" 'restclient-jump-next
+  "rp" 'restclient-jump-next
+  "ry" 'restclient-copy-curl-command
+  "rr" 'restclient-http-send-current-raw
+  )
 
 
 (evil-declare-key 'normal markdown-mode-map
