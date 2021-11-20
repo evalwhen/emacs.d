@@ -255,6 +255,19 @@ If the character before and after CH is space or tab, CH is NOT slash"
   ">" 'org-demote-or-promote ; indent
   (kbd "TAB") 'org-cycle)
 
+(evil-declare-key 'normal go-mode-map
+  "es" 'eglot-reconnect
+  "ea" 'eglot-code-actions
+
+  "ta" 'go-tag-add
+  "tr" 'go-tag-refresh
+  "td" 'go-tag-remove
+
+  "gr" 'xref-find-references
+  )
+
+
+
 (evil-declare-key 'normal markdown-mode-map
   "gh" 'outline-up-heading
   (kbd "TAB") 'markdown-cycle)

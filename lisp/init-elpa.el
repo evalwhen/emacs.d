@@ -152,6 +152,7 @@
     workgroups2
     zoutline
     go-mode
+    go-gen-test
     company-c-headers
     company-statistics)
   "Packages to install from melpa-unstable.")
@@ -520,9 +521,9 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 (require-package 'go-fill-struct)
 (require-package 'go-impl)
 ;; (require-package 'flycheck-golangci-lint)
-;;(require-package 'go-tag)
-;;(require-package 'go-gen-test)
-;;(require-package 'go-test)
+(require-package 'go-tag)
+(require-package 'go-gen-test)
+(require-package 'gotest)
 
 ;; kill buffer without my confirmation
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))
