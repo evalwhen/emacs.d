@@ -258,6 +258,7 @@ If the character before and after CH is space or tab, CH is NOT slash"
 (evil-declare-key 'normal go-mode-map
   "es" 'eglot-reconnect
   "ea" 'eglot-code-actions
+  "er" 'eglot-rename
 
   "ta" 'go-tag-add
   "tr" 'go-tag-refresh
@@ -690,6 +691,7 @@ If N > 0 and working on javascript, only occurrences in current N lines are rena
   "pe" 'lazyflymake-goto-prev-error
   "ne" 'lazyflymake-goto-next-error
   "og" 'org-agenda
+  "oc" 'org-capture
 
   "otl" 'org-toggle-link-display
   "oa" '(lambda ()
