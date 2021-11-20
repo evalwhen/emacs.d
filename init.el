@@ -152,6 +152,7 @@
 
   (require-init 'init-flymake t)
   (require-init 'init-go t)
+  (require-init 'init-gerbil)
 
   (unless (my-vc-merge-p)
     ;; @see https://www.reddit.com/r/emacs/comments/4q4ixw/how_to_forbid_emacs_to_touch_configuration_files/
