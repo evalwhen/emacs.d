@@ -37,10 +37,13 @@
   "Enable features useful in any Lisp mode."
   (enable-paredit-mode)
   (rainbow-delimiters-mode t)
-  (turn-on-eldoc-mode))
+  (turn-on-eldoc-mode)
+  (show-paren-mode))
 
 (let* ((hooks '(lisp-mode-hook
-                inferior-lisp-mode-hook)))
+                inferior-lisp-mode-hook
+                gerbil-mode-hook
+                emacs-lisp-mode-hook)))
   (dolist (hook hooks)
     (add-hook hook 'my-lisp-setup)))
 
