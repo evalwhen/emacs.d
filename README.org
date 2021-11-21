@@ -1,5 +1,7 @@
 * emacs config
-  based on [[https://github.com/redguardtoo/emacs.d][redguardtoo, great work.]]
-* add
-- [ ] golang
+  based on [[https://github.com/redguardtoo/emacs.d][config of redguardtoo.]]
+* add [100%]
+- [X] golang
+- [X] gerbil
+- [X] org-roam
 
