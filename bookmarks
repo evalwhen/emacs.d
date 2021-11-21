@@ -9,7 +9,7 @@
  (position . 405))
 ("org-capture-last-stored"
  (filename . "~/git/org/refile.org")
- (front-context-string . "* TODO tasks\n[20")
+ (front-context-string . "*  multi-edit :N")
  (rear-context-string . "-natively t))]]\n")
  (position . 270))
 )
