@@ -23,6 +23,7 @@
   :global t)
 (undo-fu-mode 1)
 (define-key evil-normal-state-map "u" 'undo-fu-only-undo)
+(define-key evil-normal-state-map "gb" 'evil-jump-backward)
 (define-key evil-normal-state-map (kbd "C-r") 'undo-fu-only-redo)
 ;; }}
 
