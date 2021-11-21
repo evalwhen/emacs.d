@@ -9,6 +9,7 @@
             ))
 (setq org-id-link-to-org-use-id 'create-if-interactive)
 (setq org-roam-v2-ack t)
+(org-roam-setup)
 ;;(define-key evil-normal-state-map "" 'beginning-of-defun)
 
 (provide 'init-roam)

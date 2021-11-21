@@ -790,9 +790,11 @@ If N > 0 and working on javascript, only occurrences in current N lines are rena
   "ui" 'gud-stepi
   "uc" 'gud-cont
   "uf" 'gud-finish
-  "ra" 'org-roam-node-insert
+  "ri" 'org-roam-node-insert
   "rs" 'org-roam-node-find
   "rc" 'org-roam-capture
+  "rt" 'org-roam-buffer-toggle
+  "rd" 'org-roam-buffer-display-dedicated
   )
 
 ;; {{ Use `;` as leader key, for searching something
