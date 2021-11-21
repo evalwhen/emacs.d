@@ -72,3 +72,4 @@ elpy/
 package-quickstart.el
 .lsp-session*
 bookmarks
+*.db

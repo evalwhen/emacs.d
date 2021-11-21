@@ -571,7 +571,13 @@ If N > 0 and working on javascript, only occurrences in current N lines are rena
    (t
     (message "Can only beautify code written in python/javascript"))))
 
-(my-comma-leader-def
+;; {{ Use `SPC` as leader key
+;; all keywords arguments are still supported
+(general-create-definer my-space-leader-def
+  :prefix "SPC"
+  :states '(normal visual))
+
+(my-space-leader-def
   "," 'evilnc-comment-operator
   "bf" 'beginning-of-defun
   "bu" 'backward-up-list
@@ -748,14 +754,8 @@ If N > 0 and working on javascript, only occurrences in current N lines are rena
   "wf" 'popup-which-function)
 ;; }}
 
-;; {{ Use `SPC` as leader key
-;; all keywords arguments are still supported
-(general-create-definer my-space-leader-def
-  :prefix "SPC"
-  :states '(normal visual))
-
 ;; Please check "init-ediff.el" which contains `my-space-leader-def' code too
-(my-space-leader-def
+(my-comma-leader-def
   "n" (lambda ()
         (interactive)
         (if (derived-mode-p 'diff-mode) (my-search-next-diff-hunk)
@@ -788,7 +788,11 @@ If N > 0 and working on javascript, only occurrences in current N lines are rena
   "us" 'gud-step
   "ui" 'gud-stepi
   "uc" 'gud-cont
-  "uf" 'gud-finish)
+  "uf" 'gud-finish
+  "ra" 'org-roam-node-insert
+  "rs" 'org-roam-node-find
+  "rc" 'org-roam-capture
+  )
 
 ;; {{ Use `;` as leader key, for searching something
 (general-create-definer my-semicolon-leader-def

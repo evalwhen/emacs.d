@@ -8,8 +8,8 @@
  (rear-context-string . "*Tasks][Tasks]]\n")
  (position . 405))
 ("org-capture-last-stored"
- (filename . "~/git/org/refile.org")
- (front-context-string . "*  multi-edit :N")
- (rear-context-string . "-natively t))]]\n")
- (position . 270))
+ (filename . "~/org-roam/20211121104749-no_id_for_capture.org")
+ (front-context-string)
+ (rear-context-string . " id for capture\n")
+ (position . 95))
 )

@@ -536,6 +536,9 @@ You still need modify `package-archives' in \"init-elpa.el\" to PERMANENTLY use 
 ;;(require-package 'treadmill-history)
 ;;(require-package 'treadmill-complete)
 
+;; org-roam
+(require-package 'org-roam)
+
 ;; kill buffer without my confirmation
 (setq kill-buffer-query-functions (delq 'process-kill-buffer-query-function kill-buffer-query-functions))
 
