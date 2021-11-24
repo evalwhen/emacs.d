@@ -83,6 +83,8 @@ capture was not aborted."
                                                           "#+title: ${title}\n#+category: ${title}\n#+filetags: Project"
                                                           ("Tasks"))))))
 
+(require 'org-roam-dailies)
+
 (defun my/org-roam-copy-todo-to-today ()
   (interactive)
   (let ((org-refile-keep t) ;; Set this to nil to delete the original!
@@ -111,4 +113,10 @@ capture was not aborted."
 (global-set-key (kbd "C-c n b") #'my/org-roam-capture-inbox)
 (global-set-key (kbd "C-c n p") #'my/org-roam-find-project)
 (global-set-key (kbd "C-c n i") #'org-roam-node-insert-immediate)
+
+(global-set-key (kbd "C-c d d") #'org-roam-dailies-goto-today)
+(global-set-key (kbd "C-c d t") #'org-roam-dailies-capture-today)
+(global-set-key (kbd "C-c d m") #'org-roam-dailies-capture-tomorrow)
+(global-set-key (kbd "C-c d y") #'org-roam-dailies-capture-yesterday)
+
 (provide 'init-roam)
