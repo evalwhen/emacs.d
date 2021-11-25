@@ -151,7 +151,7 @@
     (my-add-subdirs-to-load-path (file-name-as-directory my-site-lisp-dir)))
 
   (require-init 'init-flymake t)
-  (require-init 'init-go t)
+  (require-init 'init-go)
   (require-init 'init-gerbil)
   (require-init 'init-roam)
 
