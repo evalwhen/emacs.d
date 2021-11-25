@@ -306,7 +306,7 @@ If the character before and after CH is space or tab, CH is NOT slash"
     (shell-mode . emacs)
     (xref--xref-buffer-mode . emacs)
     (epa-key-list-mode . emacs)
-    (fundamental-mode . emacs)
+    ;;(fundamental-mode . emacs)
     (weibo-timeline-mode . emacs)
     (weibo-post-mode . emacs)
     (woman-mode . emacs)

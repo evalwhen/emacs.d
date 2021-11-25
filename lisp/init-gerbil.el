@@ -5,7 +5,7 @@
   (expand-file-name "~/gerbil/bin/gxi")) ; Set this for your GERBIL_HOME
 (setq scheme-program-name gerbil-program-name)
 
-(visit-tags-table "/Users/melp/Downloads/gerbil-0.16/src/TAGS")
+;;(visit-tags-table "/Users/melp/Downloads/gerbil-0.16/src/TAGS")
 
 ;; (add-hook 'gerbil-mode-hook #'treadmill-gerbil-mode)
 
