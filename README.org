@@ -5,3 +5,8 @@
   This is a emacs configuration based on [[https://github.com/SystemCrafters/crafted-emacs/blob/master/docs/getting-started-guide.org][crafted-emacs.]]
 
   Better for scheme programming.
+
+* TODOs [0/3]
+  - [ ] better org-mode
+  - [ ] lsp ide
+  - [ ] support erlang
