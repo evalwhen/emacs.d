@@ -155,13 +155,25 @@ Used as hook for modes which should not display line numebrs."
 ;; Make frame transparency overridable
 (defvar efs/frame-transparency '(100 . 100))
 
-(set-face-attribute 'default nil :font "Source Code Pro" :height efs/default-font-size)
+;; (set-face-attribute 'default nil :font "Source Code Pro" :height efs/default-font-size)
 
 ;; Set the fixed pitch face
-(set-face-attribute 'fixed-pitch nil :font "Source Code Pro" :height efs/default-font-size)
+;; (set-face-attribute 'fixed-pitch nil :font "Source Code Pro" :height efs/default-font-size)
 
 ;; Set the variable pitch face
-(set-face-attribute 'variable-pitch nil :font "Source Code Pro" :height efs/default-variable-font-size :weight 'regular)
+;; (set-face-attribute 'variable-pitch nil :font "Source Code Pro" :height efs/default-variable-font-size :weight 'regular)
+
+
+;; TODO: better config following below document.
+;; https://github.com/tonsky/FiraCode/wiki/Emacs-instructions
+(set-face-attribute 'default nil :font "Fira Code Retina" :height efs/default-font-size)
+
+;; Set the fixed pitch face
+(set-face-attribute 'fixed-pitch nil :font "Fira Code Retina" :height efs/default-font-size)
+
+;; Set the variable pitch face
+(set-face-attribute 'variable-pitch nil :font "Fira Code Retina" :height efs/default-variable-font-size :weight 'regular)
+
 
 (load-theme 'modus-operandi)
 
