@@ -160,5 +160,15 @@ Rebinds the arrow keys to display a message instead."
   ;; "pa" 'projectile-ag
   )
 
+;; winum package
+(winum-mode 1)
+(efs/leader-keys
+  "0" 'winum-select-window-0
+  "1" 'winum-select-window-1
+  "2" 'winum-select-window-2
+  "3" 'winum-select-window-3
+  "4" 'winum-select-window-4)
+
+
 (provide 'crafted-evil-config)
 ;;; crafted-evil-config.el ends here

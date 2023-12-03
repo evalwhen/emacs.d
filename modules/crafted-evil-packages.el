@@ -16,6 +16,8 @@
 (add-to-list 'package-selected-packages 'evil-nerd-commenter)
 (add-to-list 'package-selected-packages 'general)
 (add-to-list 'package-selected-packages 'which-key)
+(add-to-list 'package-selected-packages 'winum)
+
 
 ;; Emacs 28+ prefer the built-in undo-redo facility, but for older
 ;; versions, undo-tree is a nice option.

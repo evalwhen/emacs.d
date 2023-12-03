@@ -6,7 +6,12 @@
 
   Better for scheme programming.
 
-* TODOs [0/3]
+* TODOs [1/8]
   - [ ] better org-mode
+  - [ ] org-roam
+  - [ ] org-agenta
   - [ ] lsp ide
   - [ ] support erlang
+  - [ ] tune dired and learn to use it manage files
+  - [X] add init.el to git
+  - [ ] simplfy the module toggle to write some elisp code.
