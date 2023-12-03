@@ -163,5 +163,7 @@ Used as hook for modes which should not display line numebrs."
 ;; Set the variable pitch face
 (set-face-attribute 'variable-pitch nil :font "Source Code Pro" :height efs/default-variable-font-size :weight 'regular)
 
+(load-theme 'modus-operandi)
+
 (provide 'crafted-ui-config)
 ;;; crafted-ui-config.el ends here
