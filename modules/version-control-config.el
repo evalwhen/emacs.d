@@ -1,0 +1,1 @@
+(provide 'version-control-config)
