@@ -133,7 +133,7 @@ Rebinds the arrow keys to display a message instead."
     "cl" 'evilnc-comment-or-uncomment-lines)
 
 (efs/leader-keys
-  "g"   '(:ignore t :which-key "git")
+  "g"   '(:ignore t :which-key "git and xref")
   "gs"  'magit-status
   "gd"  'magit-diff-unstaged
   "gc"  'magit-branch-or-checkout
@@ -145,7 +145,9 @@ Rebinds the arrow keys to display a message instead."
   "gp"  'magit-pull-branch
   "gf"  'magit-fetch
   "gF"  'magit-fetch-all
-  "gr"  'magit-rebase)
+  "gr"  'magit-rebase
+  "gg" 'xref-find-definitions
+  )
 
 (efs/leader-keys
   "pf" 'project-find-file
@@ -168,6 +170,10 @@ Rebinds the arrow keys to display a message instead."
   "2" 'winum-select-window-2
   "3" 'winum-select-window-3
   "4" 'winum-select-window-4)
+
+
+;; (evil-define-key 'state 'global (kbd "g b") 'xref-go-back)
+(define-key evil-normal-state-map (kbd "g b") 'xref-go-back)
 
 
 (provide 'crafted-evil-config)
