@@ -112,11 +112,11 @@ Rebinds the arrow keys to display a message instead."
   )
 
 (efs/leader-keys
-    "SPC" 'counsel-M-x
+    "SPC" 'execute-extended-command
     "t" '(:ignore t :which-key "toggles")
     "tt" '(counsel-load-theme :which-key "choose theme")
     "f" '(:ignore t :which-key "files")
-    "ff" 'counsel-find-file
+    "ff" 'find-file
     "fr" 'counsel-recentf
     "b" '(:ignore t :which-key "buffers")
     "bs" 'ivy-switch-buffer
