@@ -16,6 +16,7 @@
 ;; single directory, does not use a database preferring filenameing
 ;; conventions and grep instead.
 (add-to-list 'package-selected-packages 'denote)
+(add-to-list 'package-selected-packages 'consult-notes)
 
 ;; Toggle the visibility of some Org elements.
 (add-to-list 'package-selected-packages 'org-appear)

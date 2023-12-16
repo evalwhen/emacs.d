@@ -144,7 +144,8 @@ Rebinds the arrow keys to display a message instead."
   )
 
 (efs/leader-keys
-  "pf" 'project-find-file
+  ;; "pf" 'project-find-file
+  "pf" 'consult-find
   ;; "ps" 'projectile-switch-project
   ;; "pF" 'consult-ripgrep
   "pq" 'project-query-replace-regexp
@@ -152,7 +153,8 @@ Rebinds the arrow keys to display a message instead."
   ;; "pk" 'projectile-kill-buffers
   ;; "pb" 'projectile-switch-to-buffer
   ;; "pd" 'projectile-dired
-  "pa" 'project-find-regexp
+  ;; "pa" 'project-find-regexp
+  "pa" 'consult-grep
   ;; "pa" 'projectile-ag
   )
 
@@ -165,6 +167,12 @@ Rebinds the arrow keys to display a message instead."
   "3" 'winum-select-window-3
   "4" 'winum-select-window-4)
 
+
+;; denote notes
+(efs/leader-keys
+  "nn" 'denote
+  "nf" 'consult-notes
+  )
 
 ;; (evil-define-key 'state 'global (kbd "g b") 'xref-go-back)
 (define-key evil-normal-state-map (kbd "g b") 'xref-go-back)

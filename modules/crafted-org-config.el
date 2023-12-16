@@ -42,5 +42,23 @@
 (add-hook 'electric-pair-mode-hook #'crafted-org-enhance-electric-pair-inhibit-predicate)
 (add-hook 'org-mode-hook #'crafted-org-enhance-electric-pair-inhibit-predicate)
 
+;; denote
+
+(require 'denote)
+
+
+;; (setq denote-directory (expand-file-name "~/Documents/org/notes"))
+(setq denote-directory (expand-file-name "~/Library/Mobile Documents/iCloud~com~appsonthemove~beorg/Documents/org"))
+
+;; consult-notes
+(setq consult-notes-file-dir-sources
+      `(("Denote Notes"  ?d ,(denote-directory))
+        ;; ("Books"  ?b "~/Documents/books/")
+        ))
+
+(consult-notes-org-headings-mode)
+
+(consult-notes-denote-mode)
+
 (provide 'crafted-org-config)
 ;;; crafted-org-config.el ends here
