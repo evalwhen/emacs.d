@@ -85,12 +85,6 @@ Rebinds the arrow keys to display a message instead."
 (if (locate-library "evil-collection")
     ;; If the user has `evil-collection' installed, initialize it.
     (evil-collection-init)
-  ;; otherwise set up some defaults
-  ;; (with-eval-after-load 'crafted-completion-config
-  ;;   (when (featurep 'vertico) ; only if `vertico' is actually loaded.
-  ;;     (keymap-set vertico-map "C-j" #'vertico-next)
-  ;;     (keymap-set vertico-map "C-k" #'vertico-previous)
-  ;;     (keymap-set vertico-map "M-h" #'vertico-directory-up)))
   )
 
 ;; from emacs from scratch
@@ -116,7 +110,7 @@ Rebinds the arrow keys to display a message instead."
     "t" '(:ignore t :which-key "toggles")
     "tt" '(counsel-load-theme :which-key "choose theme")
     "f" '(:ignore t :which-key "files")
-    "ff" 'consult-find
+    "ff" 'find-file
     "fr" 'consult-recent-file
     "b" '(:ignore t :which-key "buffers")
     "bs" 'consult-buffer

@@ -25,6 +25,8 @@
 
   (define-key vertico-map (kbd "C-j") 'vertico-next)
   (define-key vertico-map (kbd "C-k") 'vertico-previous)
+  (define-key vertico-map (kbd "C-h") 'vertico-directory-delete-word)
+  (define-key vertico-map (kbd "M-h") 'vertico-directory-up)
 
   ;; Turn off the built-in fido-vertical-mode and icomplete-vertical-mode, if
   ;; they have been turned on by crafted-defaults-config, because they interfere
