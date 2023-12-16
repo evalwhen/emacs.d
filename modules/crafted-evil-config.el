@@ -121,8 +121,6 @@ Rebinds the arrow keys to display a message instead."
     "wo" 'delete-other-windows
     "w1" 'split-window-vertically
     "w2" 'split-window-horizontally
-    "o" '(:ignore t :which-key "org")
-    "og" 'org-agenda
     "c" '(:ignore t :which-key "comment")
     "cl" 'evilnc-comment-or-uncomment-lines)
 
@@ -172,7 +170,17 @@ Rebinds the arrow keys to display a message instead."
 (efs/leader-keys
   "nn" 'denote
   "nf" 'consult-notes
+  "nr" 'denote-region
   )
+
+;; org and gtd
+(efs/leader-keys
+  "o" '(:ignore t :which-key "org")
+  "og" 'org-agenda
+  "os" 'org-schedule
+  "ot" 'org-todo
+  )
+
 
 ;; (evil-define-key 'state 'global (kbd "g b") 'xref-go-back)
 (define-key evil-normal-state-map (kbd "g b") 'xref-go-back)
