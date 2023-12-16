@@ -116,10 +116,10 @@ Rebinds the arrow keys to display a message instead."
     "t" '(:ignore t :which-key "toggles")
     "tt" '(counsel-load-theme :which-key "choose theme")
     "f" '(:ignore t :which-key "files")
-    "ff" 'find-file
-    "fr" 'counsel-recentf
+    "ff" 'consult-find
+    "fr" 'consult-recent-file
     "b" '(:ignore t :which-key "buffers")
-    "bs" 'ivy-switch-buffer
+    "bs" 'consult-buffer
     "bd" 'evil-delete-buffer
     "bb" '(lambda () (interactive) (switch-to-buffer nil)) ; to previous buffer
     "w" '(:ignore t :which-key "windows")
