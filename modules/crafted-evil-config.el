@@ -171,6 +171,8 @@ Rebinds the arrow keys to display a message instead."
   "nn" 'denote
   "nf" 'consult-notes
   "nr" 'denote-region
+  "nj" 'denote-journal-extras-new-or-existing-entry
+  "nl" 'denote-link
   )
 
 ;; org and gtd
@@ -181,6 +183,7 @@ Rebinds the arrow keys to display a message instead."
   "ot" 'org-todo
   "or" 'org-refile
   "oc" 'org-capture
+  "oo" 'org-save-all-org-buffers
   )
 
 ;; emacs lisp
