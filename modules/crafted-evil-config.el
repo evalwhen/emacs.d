@@ -149,7 +149,7 @@ Rebinds the arrow keys to display a message instead."
   "pq" 'project-query-replace-regexp
   ;; "pc" 'projectile-compile-project
   ;; "pk" 'projectile-kill-buffers
-  ;; "pb" 'projectile-switch-to-buffer
+  "pb" 'consult-project-buffer
   ;; "pd" 'projectile-dired
   ;; "pa" 'project-find-regexp
   "pa" 'consult-grep
@@ -179,7 +179,16 @@ Rebinds the arrow keys to display a message instead."
   "og" 'org-agenda
   "os" 'org-schedule
   "ot" 'org-todo
+  "or" 'org-refile
+  "oc" 'org-capture
   )
+
+;; emacs lisp
+(efs/leader-keys
+  "e" '(:ignore t :which-key "emacs lisp")
+  "er" 'eval-region
+  )
+
 
 
 ;; (evil-define-key 'state 'global (kbd "g b") 'xref-go-back)

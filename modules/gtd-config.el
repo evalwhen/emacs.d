@@ -237,10 +237,28 @@
 ; Allow refile to create parent tasks with confirmation
 (setq org-refile-allow-creating-parent-nodes (quote confirm))
 
+;; Save the corresponding buffers after refile
+(defun gtd-save-org-buffers ()
+  "Save `org-agenda-files' buffers without user confirmation.
+See also `org-save-all-org-buffers'"
+  (interactive)
+  (message "Saving org-agenda-files buffers...")
+  (save-some-buffers t (lambda () 
+			 (when (member (buffer-file-name) org-agenda-files) 
+			   t)))
+  (message "Saving org-agenda-files buffers... done"))
+
+;; Add it after refile
+(advice-add 'org-refile :after
+	    (lambda (&rest _)
+	      (org-save-all-org-buffers)))
+
 ;;=====================================
 ;; Customize agenda view
 ;; Do not dim blocked tasks
 (setq org-agenda-dim-blocked-tasks nil)
+;; auto save after agenda quit
+(advice-add 'org-agenda-quit :before 'org-save-all-org-buffers)
 
 ;; Compact the block agenda view
 (setq org-agenda-compact-blocks t)
