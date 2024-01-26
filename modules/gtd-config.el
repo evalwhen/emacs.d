@@ -14,7 +14,7 @@
 ;;
 ;;; License: GPLv3
 
-(setq org-agenda-files (quote ("~/Library/Mobile Documents/iCloud~com~appsonthemove~beorg/Documents/org"
+(setq org-agenda-files (quote ("~/Nutstore Files/org/"
                                )))
 
 (require 'org)
@@ -189,7 +189,7 @@
 ;;========================================
 ;; org-capture
 
-(defvar base-org-directory "~/Library/Mobile Documents/iCloud~com~appsonthemove~beorg/Documents/org/")
+(defvar base-org-directory "~/Nutstore Files/org/")
 (setq org-directory base-org-directory)
 (setq org-default-notes-file (concat base-org-directory "refile.org"))
 

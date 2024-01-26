@@ -48,7 +48,7 @@
 
 
 ;; (setq denote-directory (expand-file-name "~/Documents/org/notes"))
-(setq denote-directory (expand-file-name "~/Library/Mobile Documents/iCloud~com~appsonthemove~beorg/Documents/org"))
+(setq denote-directory (expand-file-name "~/Nutstore Files/org/"))
 
 ;; consult-notes
 (setq consult-notes-file-dir-sources
