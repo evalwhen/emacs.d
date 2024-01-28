@@ -56,7 +56,8 @@
         ;; ("Books"  ?b "~/Documents/books/")
         ))
 
-(consult-notes-org-headings-mode)
+;; TODO: enable it, emacs will error with Cache should be active.
+;; (consult-notes-org-headings-mode)
 
 (consult-notes-denote-mode)
 

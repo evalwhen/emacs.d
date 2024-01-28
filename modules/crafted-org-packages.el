@@ -15,6 +15,8 @@
 ;; Prot), similar features as Org-Roam, but keeps everything in a
 ;; single directory, does not use a database preferring filenameing
 ;; conventions and grep instead.
+
+(add-to-list 'package-selected-packages 'org)
 (add-to-list 'package-selected-packages 'denote)
 (add-to-list 'package-selected-packages 'consult-notes)
 
