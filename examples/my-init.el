@@ -5,16 +5,25 @@
 
 (load "~/crafted-emacs/modules/crafted-init-config")
 
+
 (set-default-coding-systems 'utf-8)
+
+(require 'crafted-package-config)
 
 ;; completions module
 (require 'crafted-completion-packages)
-(package-install-selected-packages t)
+(crafted-package-install-selected-packages)
 (require 'crafted-completion-config)
+
+;; company
+(require 'completion-inbuffer-packages)
+(crafted-package-install-selected-packages)
+(require 'completion-inbuffer-config)
+
 
 ;; evil module
 (require 'crafted-evil-packages)
-(package-install-selected-packages t)
+(crafted-package-install-selected-packages)
 (require 'crafted-evil-config)
 
 
@@ -24,33 +33,50 @@
 ;; ui modules
 (require 'crafted-ui-packages)
 ;; install the packages
-(package-install-selected-packages t)
+(crafted-package-install-selected-packages)
 ;; Load crafted-ui configuration
 (require 'crafted-ui-config)
 
 ;; better defaults
 ;; install the packages
-(package-install-selected-packages t)
+(crafted-package-install-selected-packages)
 ;; Load crafted-updates configuration
 (require 'crafted-defaults-config)
 
 ;; version control module 
 (require 'version-control-packages)
-(package-install-selected-packages t)
+(crafted-package-install-selected-packages)
 (require 'version-control-config)
 
 ;; lisp module
 (require 'crafted-lisp-packages)
-(package-install-selected-packages t)
+(crafted-package-install-selected-packages)
 (require 'crafted-lisp-config)
 
-;; org mode
+;; denote
 (require 'crafted-org-packages)
-(package-install-selected-packages t)
+(crafted-package-install-selected-packages)
 (require 'crafted-org-config)
 
 ;; gtd
 (require 'gtd-packages)
-(package-install-selected-packages t)
+(crafted-package-install-selected-packages)
 (require 'gtd-config)
 
+(require 'common-lisp-packages)
+(crafted-package-install-selected-packages)
+(require 'common-lisp-config)
+
+
+;; nice debug method
+;; (setq debug-on-error t)
+
+;; (defun force-debug (func &rest args)
+;;   (condition-case e
+;;       (apply func args)
+;;     ((debug error) (signal (car e) (cdr e)))))
+
+;; (advice-add #'corfu--post-command :around #'force-debug)
+
+
+;; use straight.el

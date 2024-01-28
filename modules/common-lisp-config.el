@@ -27,18 +27,18 @@
 ;;                   "sb" 'isearch-backward
 ;;                   )
 
-(load "~/common-lisp/nyxt/build-scripts/nyxt-guix.el" )
+;; (load "~/common-lisp/nyxt/build-scripts/nyxt-guix.el" )
 ;; (load "~/common-lisp/nyxt/build-scripts/nyxt-guix.el" :noerror)
 
-(setq sly-lisp-implementations
-        '((nyxt-sbcl
-           (lambda () (nyxt-make-guix-cl-for-nyxt
-                  "~/common-lisp/nyxt"
-                  :force t
-                  :cl-implementation "sbcl"
-                  :cl-system "nyxt/gi-gtk"
-                  :no-grafts t
-                  :preserve '("GDK_SCALE GDK_DPI_SCALE")
-                  :ad-hoc '("emacs" "xdg-utils" "git"))))))
+;; (setq sly-lisp-implementations
+;;         '((nyxt-sbcl
+;;            (lambda () (nyxt-make-guix-cl-for-nyxt
+;;                   "~/common-lisp/nyxt"
+;;                   :force t
+;;                   :cl-implementation "sbcl"
+;;                   :cl-system "nyxt/gi-gtk"
+;;                   :no-grafts t
+;;                   :preserve '("GDK_SCALE GDK_DPI_SCALE")
+;;                   :ad-hoc '("emacs" "xdg-utils" "git"))))))
 
 (provide 'common-lisp-config)
