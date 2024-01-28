@@ -36,8 +36,12 @@
 ;;; Code:
 (require 'package)
 
-(defvar crafted-package-installer #'package-install
+;; (defvar crafted-package-installer #'package-install
+;;   "Function to use when installing packages")
+(defvar crafted-package-installer #'straight-use-package
   "Function to use when installing packages")
+
+
 
 (defvar crafted-package-installed-predicate #'package-installed-p
   "Function to use when checking if a package is installed")

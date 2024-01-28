@@ -97,7 +97,7 @@
   ;; (customize-set-variable 'corfu-auto t)         ; Enable auto completion
   (customize-set-variable 'corfu-auto-prefix 2)  ; Complete with less prefix keys
 
-  ;; (global-corfu-mode 1)
+  (global-corfu-mode 1)
   (when (require 'corfu-popupinfo nil :noerror)
 
     (corfu-popupinfo-mode 1)
@@ -106,6 +106,7 @@
     (keymap-set corfu-map "M-n" #'corfu-popupinfo-scroll-up)
     (keymap-set corfu-map "M-d" #'corfu-popupinfo-toggle)))
 
+;; Adapt `evil-collection-corfu' to the new `corfu--setup' signature (see github.com/minad/corfu/issues/403)
 
 ;;; Cape
 

@@ -82,8 +82,12 @@ Rebinds the arrow keys to display a message instead."
   (add-to-list 'evil-emacs-state-modes mode))
 
 ;;; Evil Collection or some sparse defaults
+
+;; https://github.com/minad/corfu/issues/403
+;; his some issure, so i disable it
 (if (locate-library "evil-collection")
     ;; If the user has `evil-collection' installed, initialize it.
+    ;; disable
     (evil-collection-init)
   )
 

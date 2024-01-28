@@ -90,7 +90,9 @@ Run this in the `before-init-hook'"
 
 ;; Initialize package system, refresh archives if necessary before
 ;; init file runs.
-(add-hook 'before-init-hook #'crafted-package-initialize)
+
+;; I disable this, cuz i use straight.el
+;; (add-hook 'before-init-hook #'crafted-package-initialize)
 
 (provide 'crafted-early-init-config)
 ;;; crafted-early-init-config.el ends here
