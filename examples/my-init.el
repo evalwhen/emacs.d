@@ -9,18 +9,12 @@
 
 ;; completions module
 (require 'crafted-completion-packages)
-(package-install-selected-packages)
-
-;; Load crafted-completion configuration
+(package-install-selected-packages t)
 (require 'crafted-completion-config)
 
 ;; evil module
 (require 'crafted-evil-packages)
-
-;; install the packages
-(package-install-selected-packages)
-
-;; Load crafted-evil configuration
+(package-install-selected-packages t)
 (require 'crafted-evil-config)
 
 
@@ -30,27 +24,33 @@
 ;; ui modules
 (require 'crafted-ui-packages)
 ;; install the packages
-(package-install-selected-packages)
+(package-install-selected-packages t)
 ;; Load crafted-ui configuration
 (require 'crafted-ui-config)
 
 ;; better defaults
 ;; install the packages
-(package-install-selected-packages)
+(package-install-selected-packages t)
 ;; Load crafted-updates configuration
 (require 'crafted-defaults-config)
 
 ;; version control module 
 (require 'version-control-packages)
-(package-install-selected-packages)
+(package-install-selected-packages t)
 (require 'version-control-config)
 
 ;; lisp module
 (require 'crafted-lisp-packages)
-(package-install-selected-packages)
+(package-install-selected-packages t)
 (require 'crafted-lisp-config)
 
-;; company module
-(require 'completion-inbuffer-packages)
-(package-install-selected-packages)
-(require 'completion-inbuffer-config)
+;; org mode
+(require 'crafted-org-packages)
+(package-install-selected-packages t)
+(require 'crafted-org-config)
+
+;; gtd
+(require 'gtd-packages)
+(package-install-selected-packages t)
+(require 'gtd-config)
+
