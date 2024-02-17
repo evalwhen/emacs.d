@@ -146,11 +146,10 @@ Used as hook for modes which should not display line numebrs."
 
 
 ;; set fonts
-;; -*- lexical-binding: t; -*-
 
 ;; You will most likely need to adjust this font size for your system!
-(defvar efs/default-font-size 190)
-(defvar efs/default-variable-font-size 190)
+(defvar efs/default-font-size 210)
+(defvar efs/default-variable-font-size 210)
 
 ;; Make frame transparency overridable
 (defvar efs/frame-transparency '(100 . 100))

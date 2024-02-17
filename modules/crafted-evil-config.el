@@ -188,6 +188,7 @@ Rebinds the arrow keys to display a message instead."
   "or" 'org-refile
   "oc" 'org-capture
   "oo" 'org-save-all-org-buffers
+  "oe" 'org-insert-structure-template
   )
 
 ;; emacs lisp

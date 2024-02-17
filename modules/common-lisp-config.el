@@ -41,4 +41,9 @@
 ;;                   :preserve '("GDK_SCALE GDK_DPI_SCALE")
 ;;                   :ad-hoc '("emacs" "xdg-utils" "git"))))))
 
+;; intent code
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+;; (setq indent-line-function 'insert-tab)
+
 (provide 'common-lisp-config)
