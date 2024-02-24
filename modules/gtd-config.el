@@ -14,8 +14,7 @@
 ;;
 ;;; License: GPLv3
 
-(setq org-agenda-files (quote ("~/Nutstore Files/org/"
-                               )))
+(setq org-agenda-files (quote ("~/Dropbox/org/")))
 
 (require 'org)
 
@@ -189,7 +188,7 @@
 ;;========================================
 ;; org-capture
 
-(defvar base-org-directory "~/Nutstore Files/org/")
+(defvar base-org-directory "~/Dropbox/org/")
 (setq org-directory base-org-directory)
 (setq org-default-notes-file (concat base-org-directory "refile.org"))
 
