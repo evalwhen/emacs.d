@@ -19,6 +19,7 @@
 (add-to-list 'package-selected-packages 'org)
 (add-to-list 'package-selected-packages 'denote)
 (add-to-list 'package-selected-packages 'consult-notes)
+(add-to-list 'package-selected-packages 'org-download)
 
 ;; Toggle the visibility of some Org elements.
 (add-to-list 'package-selected-packages 'org-appear)

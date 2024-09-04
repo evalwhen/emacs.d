@@ -61,5 +61,7 @@
 
 (consult-notes-denote-mode)
 
+;; org-download for image
+(require 'org-download)
 (provide 'crafted-org-config)
 ;;; crafted-org-config.el ends here
