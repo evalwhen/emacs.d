@@ -67,6 +67,22 @@
 (crafted-package-install-selected-packages)
 (require 'common-lisp-config)
 
+(require 'haskell-packages)
+(crafted-package-install-selected-packages)
+(require 'haskell-config)
+
+;; gerbil
+(require 'gerbil-config)
+
+;; golang
+(require 'golang-packages)
+(crafted-package-install-selected-packages)
+(require 'golang-config)
+
+;; notes
+(require 'note-packages)
+(crafted-package-install-selected-packages)
+(require 'note-config)
 
 ;; nice debug method
 ;; (setq debug-on-error t)

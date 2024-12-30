@@ -78,8 +78,14 @@ Rebinds the arrow keys to display a message instead."
 ;; TODO: Split this out to other configuration modules?
 (dolist (mode '(custom-mode
                 eshell-mode
-                term-mode))
+                term-mode
+                ))
   (add-to-list 'evil-emacs-state-modes mode))
+
+;; (evil-set-initial-state 'howm-mode 'emacs)
+;; (evil-set-initial-state 'howm-view-summary-mode 'emacs)
+;; (evil-set-initial-state 'howm-menu-mode 'emacs)
+;; (evil-set-initial-state 'howm-view-contents-mode 'emacs)
 
 ;;; Evil Collection or some sparse defaults
 
@@ -172,9 +178,12 @@ Rebinds the arrow keys to display a message instead."
 
 ;; denote notes
 (efs/leader-keys
-  "nn" 'denote
-  "nf" 'consult-notes
-  "nr" 'denote-region
+  "nn" 'howm-list-grep
+  "nt" 'howm-list-todo
+  "nq" 'howm-view-kill-buffer
+  "nc" 'howm-create
+  "nr" 'howm-remember
+  "nd" 'howm-insert-date
   "nj" 'denote-journal-extras-new-or-existing-entry
   "nl" 'denote-link
   )
