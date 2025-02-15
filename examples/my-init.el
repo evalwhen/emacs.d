@@ -71,6 +71,10 @@
 (crafted-package-install-selected-packages)
 (require 'haskell-config)
 
+(require 'racket-packages)
+(crafted-package-install-selected-packages)
+(require 'racket-config)
+
 ;; gerbil
 (require 'gerbil-config)
 
@@ -95,4 +99,4 @@
 ;; (advice-add #'corfu--post-command :around #'force-debug)
 
 
-;; Use straight.el
+;; use straight.el
