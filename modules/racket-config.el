@@ -5,7 +5,7 @@
 ;; Author: hujianfeng <melp@localhost>
 ;; Keywords: c, c, 
 
-
+(require 'racket-xp)
 (add-hook 'racket-mode-hook #'racket-xp-mode)
 
 (provide 'racket-config)

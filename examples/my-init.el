@@ -95,4 +95,4 @@
 ;; (advice-add #'corfu--post-command :around #'force-debug)
 
 
-;; use straight.el
+;; Use straight.el
