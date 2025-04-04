@@ -46,4 +46,6 @@
 (setq-default tab-width 2)
 ;; (setq indent-line-function 'insert-tab)
 
+;;(add-hook 'lisp-mode-hook (lambda () (lispy-mode 1)))
+
 (provide 'common-lisp-config)
