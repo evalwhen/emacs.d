@@ -88,6 +88,12 @@
 (crafted-package-install-selected-packages)
 (require 'note-config)
 
+;; clojure
+(require 'clojure-packages)
+(crafted-package-install-selected-packages)
+(require 'clojure-config)
+
+
 ;; nice debug method
 ;; (setq debug-on-error t)
 

@@ -8,6 +8,8 @@
                   "gm" 'sly-who-macroexpands
                   "gf" 'sly-compile-defun
                   "gb" 'sly-pop-find-definition-stack
+                  "eb" 'sly-eval-buffer
+                  "gk" 'paredit-kill
                   ;; "ds" 'sly-stickers-dwim
                   ;; "dr" 'sly-stickers-replay
                   ;; "dt" 'sly-stickers-toggle-break-on-stickers
